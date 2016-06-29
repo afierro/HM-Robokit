@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+  <body>
+    <h1 style="margin-left:16%; margin-top:10%">Robot-Kit control panel v0.0.2</h1>
+    <img src="enfermera.jpg" style="width: 400px;height: 400px;float: right;margin-right: 400px;margin-top: -80px;"></img>
+  </br>
+    <input type="button"
+           value="Go"
+           onclick='$.get("http://192.168.0.177:1010/?go_",function(){console.log("OK")});'
+           style="margin-left:50px; margin-bottom: 30px;width:20%; height:30px;"/>
+    <br/>
+    <input type="button"
+           value="Back"
+           onclick='$.get("http://192.168.0.177:1010/?back_",function(){console.log("OK")});'
+           style="margin-left:50px; margin-bottom: 30px;width:20%; height:30px;"/>
+<br/>
+    <input type="button"
+           value="Stop"
+           onclick='$.get("http://192.168.0.177:1010/?_",function(){console.log("OK")});'
+           style="margin-left:50px; margin-bottom: 30px;width:20%; height:30px;"/>
+  </body>
+
+</html>
